@@ -1,0 +1,13 @@
+.map-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    width: 50%;
+}
+.number-list{
+    display: flex;
+    flex-direction: column;
+}
