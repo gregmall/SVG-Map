@@ -8,7 +8,7 @@ const MapImage=() =>{
     const unselectedColor="#000000"
     const [selected, setSelected] = useState([]);
     const [phone, setPhone] = useState([]);
-    const [zbw, setZbw] = useState(false)
+   
     const handleClick=(e)=>{
         const name = e.target.id.slice(-3).toUpperCase();
         const number = numbers[name];
