@@ -683,7 +683,7 @@ return (
                 </g>
             </svg>
         </div>
-        <div style={{ marginLeft: "100px", display: 'flex', flexDirection:'column', backgroundColor: '#f0e784', padding: '20px', borderRadius:'10px', width: '200px'}}>
+        <div style={{ marginLeft: "100px", display: 'flex', flexDirection:'column', backgroundColor: '#f0e784', padding: '20px', borderRadius:'10px', width: '200px', textAlign:'center'}}>
             <h3>Numbers:</h3>
             {phone.length>0?
          
