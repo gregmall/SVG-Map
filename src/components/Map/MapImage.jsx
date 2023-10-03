@@ -18,17 +18,17 @@ const MapImage=() =>{
             if(selected !==''){
                 alert(`${number} added to queue`)
                 setSelected((selected)=>[...selected, name])
-                setPhone((phone)=>[...phone, number])
+                setPhone((phone)=>[...phone, {city: name, phone: number}])
             }else{
                  setSelected([name])
-                 setPhone([number])
+                 setPhone([{city: name, phone: number}])
 
             }
         }else{
             alert(`${number} removed from queue`)
             const newSelected = selected.filter(word=> word !== name);
             setSelected(newSelected);
-            const newNumbers = phone.filter(num =>num!== number);
+            const newNumbers = phone.filter(num =>num.phone!== number);
             setPhone(newNumbers);
             
         }
@@ -37,7 +37,7 @@ const MapImage=() =>{
     }
 
 return (
-    <div className="map-page" style={{display: 'flex', justifyContent:'space-between'}}>
+    <div style={{display: 'flex', justifyContent:'space-evenly', marginTop:'50px'}}>
         <div className="map">
         
             <svg
@@ -686,9 +686,13 @@ return (
         <div style={{ marginLeft: "100px", display: 'flex', flexDirection:'column', backgroundColor: '#f0e784', padding: '20px', borderRadius:'10px', width: '200px'}}>
             <h3>Numbers:</h3>{phone.length>0?
          
-            (phone.map((num)=>{
+            (phone.map((obj, index)=>{
+                const { city, phone} = obj;
+                  
                 return(
-                    <span> {num} </span>
+                    <div key={index}>
+                    <span>{city} - {phone} </span>
+                    </div>
                 )
             })):<span>Empty</span>}
         
