@@ -1,6 +1,6 @@
 import React, { useState }  from 'react'
 import numbers from '../../assets/numbers';
-import  './Map.css'
+import './Map.css'
 
 const MapImage=() =>{
   
@@ -37,7 +37,7 @@ const MapImage=() =>{
     }
 
 return (
-    <div className="map-page">
+    <div className="map-page" style={{display: 'flex', justifyContent:'space-between'}}>
         <div className="map">
         
             <svg
@@ -683,14 +683,15 @@ return (
                 </g>
             </svg>
         </div>
-        <div style={{display: 'flex', flexDirection:'column'}}>
+        <div style={{ marginLeft: "100px", display: 'flex', flexDirection:'column', backgroundColor: '#f0e784', padding: '20px', borderRadius:'10px', width: '200px'}}>
             <h3>Numbers:</h3>{phone.length>0?
+         
             (phone.map((num)=>{
                 return(
                     <span> {num} </span>
                 )
-            })):<span>No numbers selected</span>}
-            
+            })):<span>Empty</span>}
+        
         </div>
 
     </div>
