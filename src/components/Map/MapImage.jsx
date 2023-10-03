@@ -1,9 +1,10 @@
 import React, { useState }  from 'react'
 import numbers from '../../assets/numbers';
+import  './Map.css'
 
 const MapImage=() =>{
   
-    const selectedColor = "#00ff00"
+    const selectedColor = "#254aa8"
     const unselectedColor="#000000"
     const [selected, setSelected] = useState([]);
     const [phone, setPhone] = useState([]);
@@ -11,9 +12,7 @@ const MapImage=() =>{
     const handleClick=(e)=>{
         const name = e.target.id.slice(-3).toUpperCase();
         const number = numbers[name];
-        
-        
-        
+
         if(!selected.includes(name)){
         
             if(selected !==''){
@@ -34,12 +33,13 @@ const MapImage=() =>{
             
         }
         
-        console.log(selected, phone)
+        
     }
 
 return (
     <div className="map-page">
-        <div>
+        <div className="map">
+        
             <svg
                 id="map"
                 version="1.1"

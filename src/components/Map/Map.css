@@ -1,13 +1,17 @@
 .map-page{
+    background-color: red;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .map{
-    width: 50%;
+   
+    border: 1px black solid;
+    background-color: red;
 }
 .number-list{
     display: flex;
     flex-direction: column;
+    background-color: red;
 }
