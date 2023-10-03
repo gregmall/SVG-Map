@@ -16,7 +16,7 @@ const MapImage=() =>{
         if(!selected.includes(name)){
         
             if(selected !==''){
-                alert(`${number} added to queue`)
+                alert(`${name} phone number added to queue`)
                 setSelected((selected)=>[...selected, name])
                 setPhone((phone)=>[...phone, {city: name, phone: number}])
             }else{
