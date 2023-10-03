@@ -25,7 +25,7 @@ const MapImage=() =>{
 
             }
         }else{
-            alert(`${number} removed from queue`)
+            alert(`${name} phone number removed from queue`)
             const newSelected = selected.filter(word=> word !== name);
             setSelected(newSelected);
             const newNumbers = phone.filter(num =>num.phone!== number);
