@@ -7,7 +7,7 @@ import MapImage from './MapImage';
 const  Map= ()=> {
 
   return (
-    <div  >
+    <div>
 
         <div className ="map">
             {MapImage()}

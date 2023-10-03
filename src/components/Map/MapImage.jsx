@@ -684,17 +684,19 @@ return (
             </svg>
         </div>
         <div style={{ marginLeft: "100px", display: 'flex', flexDirection:'column', backgroundColor: '#f0e784', padding: '20px', borderRadius:'10px', width: '200px'}}>
-            <h3>Numbers:</h3>{phone.length>0?
+            <h3>Numbers:</h3>
+            {phone.length>0?
          
-            (phone.map((obj, index)=>{
-                const { city, phone} = obj;
-                  
-                return(
-                    <div key={index}>
-                    <span>{city} - {phone} </span>
-                    </div>
-                )
-            })):<span>Empty</span>}
+                (phone.map((obj, index)=>{
+                    const { city, phone} = obj;
+                    
+                    return(
+                        <div key={index}>
+                        <span>{city} - {phone}</span>
+                        </div>
+                    )
+
+                })):<span>Empty</span>}
         
         </div>
 
