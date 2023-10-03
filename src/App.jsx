@@ -8,6 +8,7 @@ function App() {
       <header className="App" style={{alignItems: 'center', display: 'flex', flexDirection:'column'}}>
         <h1>Regional Map Number Lookup</h1>
         <h3>Click a region on the map to add the corresponding phone number to the queue</h3>
+        <h3>Clicking an already selected region will remove the number from the queue</h3>
       </header>
       <Map />
     </div>
