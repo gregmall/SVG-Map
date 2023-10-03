@@ -8,10 +8,7 @@ const  Map= ()=> {
 
   const values = []
   const [selected, setSelected] = useState();
-  const localImage ={
-    
 
-  }
 
 
 
